@@ -58,7 +58,10 @@
     @apply border-brand-500 bg-brand-50;
   }
   .m-option:has(input:disabled) {
-    @apply cursor-not-allowed opacity-50;
+    @apply cursor-not-allowed;
+  }
+  .m-option:has(input:disabled) > :not(.m-reserved) {
+    @apply opacity-50;
   }
   .m-option input[type=radio],
   .m-option input[type=checkbox] {
@@ -72,7 +75,17 @@
     @apply border-2 border-brand-500;
   }
   .m-equip:has(input:disabled) {
-    @apply cursor-not-allowed opacity-50;
+    @apply cursor-not-allowed;
+  }
+  .m-equip:has(input:disabled) > span:not(.m-reserved) {
+    @apply opacity-50;
+  }
+
+  .m-reserved {
+    @apply hidden items-center rounded-full bg-ink-900 px-2.5 py-1 text-xs font-semibold text-white;
+  }
+  :has(> input[data-reserved]) > .m-reserved {
+    @apply inline-flex;
   }
   .m-equip input {
     @apply sr-only;
