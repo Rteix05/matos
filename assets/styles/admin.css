@@ -44,7 +44,7 @@ body.ea {
 }
 
 .ea .sidebar {
-  border-right: 1px solid #E5E9F0;
+  border-right: 1px solid var(--sidebar-border-color);
 }
 
 .ea #header-logo .logo {
@@ -88,7 +88,7 @@ body.ea {
 }
 
 .ea .btn-primary {
-  border-color: #0B1622;
+  border-color: var(--button-primary-bg);
 }
 
 .ea .badge.badge-boolean-true {
@@ -131,3 +131,36 @@ body.ea {
 .ea-avatar {
   @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-700;
 }
+
+.ea-dark-scheme .bg-white { background-color: var(--content-bg) !important; }
+.ea-dark-scheme .bg-surface-bg { background-color: var(--body-bg) !important; }
+.ea-dark-scheme .bg-surface-muted { background-color: var(--true-gray-800) !important; }
+.ea-dark-scheme .border-surface-line { border-color: var(--true-gray-700) !important; }
+.ea-dark-scheme .bg-ink-900 { background-color: var(--true-gray-700) !important; }
+.ea-dark-scheme .text-ink-900 { color: var(--true-gray-100) !important; }
+.ea-dark-scheme .text-ink-700 { color: var(--true-gray-300) !important; }
+.ea-dark-scheme .text-ink-500 { color: var(--true-gray-400) !important; }
+.ea-dark-scheme .text-ink-400 { color: var(--true-gray-500) !important; }
+.ea-dark-scheme .text-brand-700 { color: #00ADEA !important; }
+.ea-dark-scheme .text-emerald-600 { color: #34d399 !important; }
+.ea-dark-scheme .text-amber-700 { color: var(--amber-400) !important; }
+.ea-dark-scheme .bg-brand-50 { background-color: rgba(0, 173, 234, .15) !important; }
+.ea-dark-scheme .bg-emerald-50 { background-color: rgba(16, 185, 129, .15) !important; }
+.ea-dark-scheme .bg-amber-50 { background-color: rgba(245, 158, 11, .15) !important; }
+.ea-dark-scheme .bg-red-50 { background-color: rgba(239, 68, 68, .15) !important; }
+
+.ea-dark-scheme .ea-btn-dark { background-color: var(--true-gray-100) !important; color: var(--true-gray-950) !important; }
+.ea-dark-scheme .ea-btn-dark:hover { background-color: var(--true-gray-300) !important; color: var(--true-gray-950) !important; }
+.ea-dark-scheme .ea-btn-light:hover,
+.ea-dark-scheme .ea-btn-ghost:hover { background-color: var(--true-gray-700) !important; color: var(--true-gray-100) !important; }
+.ea-dark-scheme .ea-btn-danger:hover { background-color: rgba(239, 68, 68, .25) !important; }
+.ea-dark-scheme .ea-avatar { background-color: rgba(0, 173, 234, .2) !important; color: #00ADEA !important; }
+.ea-dark-scheme .ea-card,
+.ea-dark-scheme .table.datagrid { background-color: var(--content-bg) !important; border-color: var(--true-gray-700) !important; }
+.ea-dark-scheme .table.datagrid thead th { background-color: var(--body-bg) !important; }
+.ea-dark-scheme #header-logo .logo,
+.ea-dark-scheme .content-header-title .title,
+.ea-dark-scheme h1.title { color: var(--true-gray-100) !important; }
+.ea-dark-scheme .ea-btn-light { background-color: var(--content-bg) !important; border-color: var(--true-gray-700) !important; color: var(--true-gray-100) !important; }
+.ea-dark-scheme .ea-btn-ghost { background-color: var(--true-gray-800) !important; color: var(--true-gray-100) !important; }
+.ea-dark-scheme .badge.badge-boolean-true { background-color: rgba(16, 185, 129, .15) !important; color: #34d399 !important; }
