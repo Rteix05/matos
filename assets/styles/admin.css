@@ -164,3 +164,20 @@ body.ea {
 .ea-dark-scheme .ea-btn-light { background-color: var(--content-bg) !important; border-color: var(--true-gray-700) !important; color: var(--true-gray-100) !important; }
 .ea-dark-scheme .ea-btn-ghost { background-color: var(--true-gray-800) !important; color: var(--true-gray-100) !important; }
 .ea-dark-scheme .badge.badge-boolean-true { background-color: rgba(16, 185, 129, .15) !important; color: #34d399 !important; }
+
+.ea .content-wrapper {
+  grid-template-columns: minmax(0, 1fr) var(--resize-handler-width);
+}
+
+.ea .content {
+  min-width: 0;
+}
+
+.ea .content-body:has(> .table.datagrid) {
+  overflow-x: auto;
+}
+
+.ea #navigation-toggler {
+  min-width: 40px;
+  min-height: 40px;
+}

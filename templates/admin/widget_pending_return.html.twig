@@ -16,7 +16,7 @@
 			{% else %}
 				<span class="ea-badge bg-brand-50 text-brand-700">Retour</span>
 			{% endif %}
-			<div class="min-w-0 flex-1">
+			<div class="min-w-0 grow basis-48 md:basis-0">
 				<p class="m-0 font-semibold text-ink-900">#{{ loan.id }} · {{ loan.loaner }}</p>
 				<p class="m-0 truncate text-xs text-ink-500">{{ loan.equipmentLoaned|map(e => e.name)|join(', ') }} · géré par {{ loan.assignee }}</p>
 			</div>
